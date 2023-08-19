@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booleans</title>
+</head>
+<body>
+
+ <script>
+  /*
+  true
+  false
+
+  console.log(3 > 5 - 5);
+
+  console.log(5 === '5.00');
+
+  if (false){
+    console.log('hello');
+  } else {
+console.log('else');
+  }
+
+  const age = 15;
+  if (age >= 16){
+    console.log('When message to output is one the curry braces is not mandatory');
+    console.log('You can drive');
+    console.log('Congrats');
+  } else if(age >= 14){
+    console.log('Almost there!');
+  } else {
+console.log('You can not drive');
+  }
+  */
+ /*
+ console.log(true && true);
+ console.log(true && false);
+ console.log(false && true);
+ console.log(false && false);
+
+ console.log(0.2 >= 0 && 0.2 < 1/3);
+
+ console.log(true || true);
+ console.log(true || false);
+ console.log(false || true);
+ console.log(false || false);
+
+ console.log(!true);
+ console.log(!false);
+  */
+/*
+  if (0){
+    console.log('truthy');
+  }
+
+  const cartQuantty = 5;
+  if (cartQuantty){
+    console.log('cart has products');
+  }
+  
+  // zero is falsy value
+  console.log(!0);
+
+  // NaN: not a number
+  console.log('text' / 5);
+
+  //undefined: something doesn't have a value
+  let variable1;
+  console.log(variable1);
+
+  const variable2 = undefined;
+  console.log(variable2);
+  */
+
+  //ternary operators
+  true ? 'truthy' : 'falsy'
+  /*ternary operators can be stored in variable this is advantage of ternary operators over normal if statement
+  */ 
+  const result = true ? 'truthy' : 'falsy';
+  console.log(result);
+
+//Guard operators &&
+  false && console.log('hello');
+  const message = false && 'hello';
+  console.log(message); //false will be saved in message variable
+  const message1 = 5 && 'hello';
+  console.log(message1); //the string hello will be saved in message variable
+
+
+  //the above is shortcut of 
+  let results;
+
+  if (0) {
+    results = 'truthy';
+    console.log(results);
+  } else {
+    results = 'falsy';
+    console.log(results);
+  }
+
+//Default operators ||
+const currencies = 'Euros' || 'USD';
+console.log(currencies);//Euros
+
+const currency = undefined || 'USD';
+console.log(currency); //USD
+
+ </script> 
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+
+ <script>
+  /*
+  const product = {
+    name: 'socks',
+    price: 1090
+  };
+  console.log(typeof product);
+  console.log(product);
+  console.log(product.name);
+  console.log(product.price);
+  
+  product.name = 'cotton socks';
+  console.log(product);
+
+  product.newProduct = true;
+  console.log(product);
+
+  //To delete property
+  delete product.newProduct;
+  console.log(product);
+*/
+
+/*
+ const product2 = {
+name: 'shirt',
+['delivery-time']:'1 day',
+//nested object
+rating: {
+  stars: 4.5,
+  count: 87
+},
+// function  inside object
+fun: function function1(){
+  console.log('function inside object');
+}
+
+ };
+ console.log(product2);
+ console.log(product2.name);//dot notation
+ console.log(product2['name']);//bracket notation
+ /*bracket notation: lets us use properties that don't work with dot notation*/
+//  console.log(product2.delivery-time); //error bcs of minus sign
+/*
+console.log(product2['delivery-time']);
+
+console.log(product2.rating.count);
+product2.fun();
+
+//methods
+console.log(typeof console);//object
+console.log(typeof console.log);//function inside an object
+//built-in objects
+console.log(JSON.stringify(product2)); //object to json
+
+const jsonString = JSON.stringify(product2);
+console.log(JSON.parse(jsonString));
+*/
+
+//auto-boxing
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+
+//copy by reference
+const object1 = {
+  message: 'hello'
+};
+const object2 = object1;
+
+object1.message = 'God job!';
+console.log(object1);
+console.log(object2);
+
+const object3 = {
+  message: 'God job!'
+};
+
+console.log(object3 === object1); //false bcs it compares the references, not the values inside
+
+console.log(object2 ===object1);
+
+const object4 = {
+  message: 'God job!',
+  price: 799
+};
+
+//const message = object4.message
+const {message, price} = object4; //destructuring
+console.log(message);
+console.log(price);
+
+//shorthand property
+const object5 = {
+  //message: message
+  message,
+  //method: function function1(){
+    //console.log('method');
+  //}
+  //shorthand method  
+  method() {
+    console.log('method');
+  }
+};
+console.log(object5);
+object5.method();
+ </script> 
+</body>
+</html>
